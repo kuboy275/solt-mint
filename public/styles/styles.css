@@ -261,9 +261,9 @@ body {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      align-items: start;
       gap: 10px; }
       .step-bar .step-bar-list .item:not(:last-child) {
         padding-bottom: 16px; }
@@ -301,7 +301,7 @@ body {
     transform: translateY(-50%); }
   .form-submit .form-group .form-control {
     border: 2px solid #1F1D20;
-    background: #171618;
+    background: #171618 !important;
     padding: 12px 10px;
     height: auto;
     font-size: 14px;
@@ -375,6 +375,32 @@ body {
       .form-submit .form-check input[type="checkbox"]:checked + label::after {
         left: calc(100% - 18px);
         background: #0D0C0D; }
+
+.form-submit .form-upload-file .label-upload-logo {
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: 20px;
+  background: #171618;
+  border: 2px solid #1F1D20;
+  cursor: pointer;
+  position: relative; }
+  .form-submit .form-upload-file .label-upload-logo img {
+    max-width: 60px; }
+  .form-submit .form-upload-file .label-upload-logo .desc {
+    margin-top: 10px; }
+    .form-submit .form-upload-file .label-upload-logo .desc p {
+      color: #827986;
+      font-weight: 400;
+      padding-bottom: 5px; }
+  .form-submit .form-upload-file .label-upload-logo .form-control-file {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer; }
 
 .form-submit .add-receiver-address-section span.label {
   font-size: 14px;
