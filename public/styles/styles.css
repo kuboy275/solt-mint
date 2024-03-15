@@ -203,7 +203,7 @@ body {
         font-size: 20px;
         -webkit-transition: .3s ease;
         transition: .3s ease; }
-      .sidebar .navbar .navbar-wrapper .navbar-item .navbar-link:hover {
+      .sidebar .navbar .navbar-wrapper .navbar-item .navbar-link:hover, .sidebar .navbar .navbar-wrapper .navbar-item .navbar-link.active {
         background: #F4F3F40D; }
     @media only screen and (max-width: 1200px) {
       .sidebar .navbar {
