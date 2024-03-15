@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>SOLMINT</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <link rel="icon" href="favicon-16x16.png" type="image/x-icon" sizes="16x16">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="styles/styles.css">
+  </head>
+  <body class="home-page">
+    <div class="page-wrapper">
+      <header class="main-header">
+        <div class="container py-4 py-xl-3">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-auto d-block d-xl-none">
+              <button class="btn btn-icon btn-open-menu"><img class="icon-open" src="../images/icons/bars-icon.png" alt=""><i class="fal fa-times icon-close"></i></button>
+            </div>
+            <div class="col-auto col-xl-3"> <a class="logo" href="index.html"><img class="logo-desktop d-none d-xl-block" src="./images/logo.png" alt="Logo"><img class="logo-mobile d-block d-xl-none" src="./images/logo-no-text-gradient.png" alt="Logo"></a></div>
+            <div class="col-12 col-xl-6 d-none d-xl-block">
+              <div class="bread-crumbs d-flex flex-column"> 
+                <h6 class="title-page">SOLMINT</h6>
+                <ul class="bread-crumbs-list d-flex align-items-center">
+                  <li> <span>Home/</span></li>
+                  <li> <span>Token Manager/</span></li>
+                  <li> <span class="active">Token Burn</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-auto col-xl-3">
+              <div class="d-flex align-items-center justify-content-end">
+                <div class="logo d-none d-xl-block"><img src="./images/logo-solana.png" alt="Solana Logo"></div><a class="btn btn-primary btn-connect-wallet" href="#!" data-toggle="modal" data-target="#modalConnectWallet"> <img class="img-desktop d-none d-xl-block" src="./images/logo-no-text.png" alt=""><img class="img-mobile d-block d-xl-none" src="./images/logo-wallet.png" alt=""><span class="d-none d-xl-block">Connect wallet</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="main-content py-5">
+        <div class="container"> 
+          <div class="row">	
+            <div class="col-12 col-xl-3">
+              <div class="sidebar">
+                <div class="navbar">
+                  <ul class="navbar-wrapper"> 
+                    <li class="navbar-item"> <a class="navbar-link"><img class="icon" src="../images/icons/home-icon.png">Home <i class="far fa-angle-down"></i></a></li>
+                    <li class="navbar-item"> <a class="navbar-link" data-toggle="collapse" href="#collapseTokenManager" aria-expanded="true"><img class="icon" src="../images/icons/home-icon.png">Token manager <i class="far fa-angle-down"></i></a>
+                      <div class="collapse show" id="collapseTokenManager">
+                        <ul class="navbar-dropdown"> 
+                          <li class="navbar-item"> <a class="navbar-link"><img class="icon" src="../images/icons/home-icon.png">Token Creator <span class="noti">New</span></a></li>
+                          <li class="navbar-item"> <a class="navbar-link"><img class="icon" src="../images/icons/home-icon.png">Mint, Revoke Authority <span class="noti">New</span></a></li>
+                          <li class="navbar-item"> <a class="navbar-link"><img class="icon" src="../images/icons/home-icon.png">Token Burn<span class="noti">New</span></a></li>
+                          <li class="navbar-item"> <a class="navbar-link"><img class="icon" src="../images/icons/home-icon.png">Update Metadata<span class="noti">New</span></a></li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="banner-ads d-none d-xl-block"><img src="../images/banner-ads-1.png" width="100%" alt="ads"></div>
+              </div>
+            </div>
+            <div class="col-12 col-xl-7">
+              <div class="content-wrapper"> 
+                <div class="content-submit"> 
+                  <h6 class="content-submit-title">Token Mint, Revoke Freeze & Mint Authority</h6>
+                  <p class="content-submit-desc">Easily revoke the Mint and Freeze Authority of any Token you created.</p>
+                </div>
+                <div class="row flex-column flex-column-reverse flex-xl-row">
+                  <div class="col-12 col-xl-6">
+                    <form class="form-submit" action="">
+                      <div class="form-group"> 
+                        <label for="">Token Address</label>
+                        <input class="form-control" type="text" placeholder="Enter token address">
+                      </div>
+                      <div class="add-receiver-address-section">
+                        <div class="d-flex align-items-center justify-content-between py-2"><span class="label">Receiver Address</span>
+                          <div class="add-input d-flex align-items-center"><span class="label">Add Receiver address </span>
+                            <button class="btn btn-icon js-add-receiver-input" type="button"><i class="far fa-plus"></i></button>
+                          </div>
+                        </div>
+                        <div class="form-group"> 
+                          <input class="form-control" type="text" name="receiver-address-field-1" placeholder="Enter receiver address">
+                          <button class="btn btn-icon js-remove-receiver-input" type="button"><i class="far fa-times"></i></button>
+                        </div>
+                      </div>
+                      <div class="form-group"> 
+                        <label for="">Amount</label>
+                        <input class="form-control" type="text" placeholder="How much supply you want to mint">
+                      </div>
+                      <div class="form-row py-4">
+                        <div class="col-4">
+                          <div class="form-group form-check"><span class="label">Revoke Freeze</span>
+                            <input type="checkbox" id="revoke-freeze" checked>
+                            <label for="revoke-freeze"> </label><span class="status">FREE</span>
+                          </div>
+                        </div>
+                        <div class="col-4">
+                          <div class="form-group form-check"><span class="label">Revoke Freeze</span>
+                            <input type="checkbox" id="revoke-mint" checked>
+                            <label for="revoke-mint"> </label><span class="status">FREE</span>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="btn btn-primary w-100" type="submit">Connect Wallet</button>
+                    </form>
+                  </div>
+                  <div class="col-12 col-xl-6"> 
+                    <div class="step-bar"> 
+                      <h6 class="step-bar-title">How to use Revoke Authority</h6>
+                      <div class="step-bar-list"> 
+                        <div class="item"> <span class="icon"> <img src="../images/icons/check-icon.png" alt=""></span>
+                          <p>Connect your Solana wallet</p>
+                        </div>
+                        <div class="item"> <span class="icon"> <img src="../images/icons/check-icon.png" alt=""></span>
+                          <p>Select the Token from your wallet</p>
+                        </div>
+                        <div class="item"> <span class="icon"> <img src="../images/icons/check-icon.png" alt=""></span>
+                          <p>Click on Revoke Mint or Revoke Freeze</p>
+                        </div>
+                        <div class="item"> <span class="icon"> <img src="../images/icons/check-icon.png" alt=""></span>
+                          <p>Accept the Transaction</p>
+                        </div>
+                        <div class="item"> <span class="icon"> <img src="../images/icons/check-icon.png" alt=""></span>
+                          <p>Wait a second and the changes will be applied</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="step-bar"> 
+                      <h6 class="step-bar-title">How to use Token Mint</h6>
+                      <div class="step-bar-list"> 
+                        <div class="item"> <span class="icon"> <img src="../images/icons/check-icon.png" alt=""></span>
+                          <p>Connect your Solana wallet</p>
+                        </div>
+                        <div class="item"> <span class="icon"> <img src="../images/icons/check-icon.png" alt=""></span>
+                          <p>Select the Token from your wallet to mint</p>
+                        </div>
+                        <div class="item"> <span class="icon"> <img src="../images/icons/check-icon.png" alt=""></span>
+                          <p>Enter the quantity you want to mint</p>
+                        </div>
+                        <div class="item"> <span class="icon"> <img src="../images/icons/check-icon.png" alt=""></span>
+                          <p>Click on Mint Token and confirm the Transaction</p>
+                        </div>
+                        <div class="item"> <span class="icon"> <img src="../images/icons/check-icon.png" alt=""></span>
+                          <p>Wait a minute for your update</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-xl-2 d-none d-xl-block">
+              <div class="banner-ads"><img src="../images/banner-ads-2.png" width="100%" alt="ads"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="main-footer">
+        <div class="container"> 
+          <div class="row align-items-center justify-content-between"> 
+            <div class="col-12 col-xl-3">
+              <div class="logo mb-4"><img src="./images/logo-footer.png" alt="Footer Logo"></div>
+              <p class="copy-right text-white">© 2024 SOLMINT. All rights reserved.</p>
+            </div>
+            <div class="col-12 col-xl-4 pt-5 pt-xl-0">
+              <div class="socials text-xl-right">
+                <p>Join our community</p>
+                <div class="socials-list d-flex align-items-center justify-content-xl-end"><a href="#!"><i class="fab fa-youtube"></i></a><a href="#!"><i class="fab fa-instagram"></i></a><a href="#!"><i class="fab fa-twitter"></i></a><a href="#!"><i class="fab fa-discord"></i></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="modal modal-popup" tabindex="-1" id="modalConnectWallet">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header"><img src="../images/logo.png" alt="" width="100px">
+              <button class="close btn btn-icon" type="button" data-dismiss="modal" aria-label="Close"><i class="fal fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+              <h3 class="modal-title">Connect a wallet on Solana to continue</h3>
+              <form class="form-modal" action="">
+                <div class="form-select"> 
+                  <div class="item-select"> 
+                    <div class="icon"> </div><span>Phantom</span>
+                  </div>
+                </div>
+                <div class="form-select"> 
+                  <div class="item-select"> 
+                    <div class="icon"> </div><span>Metamask</span>
+                  </div>
+                </div>
+                <button class="btn btn-primary w-100" type="submit"> Connect</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"> </script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
