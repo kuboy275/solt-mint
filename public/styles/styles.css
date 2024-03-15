@@ -190,10 +190,10 @@ body {
         -webkit-transform: rotate(180deg);
         transform: rotate(180deg); }
       .sidebar .navbar .navbar-wrapper .navbar-item .navbar-link .icon {
-        padding: 12px;
         background: #F4F3F40D;
         border-radius: 4px;
-        margin-right: 10px; }
+        margin-right: 10px;
+        padding: 12px; }
       .sidebar .navbar .navbar-wrapper .navbar-item .navbar-link span.noti {
         font-size: 10px;
         font-weight: 600;
@@ -205,6 +205,10 @@ body {
         transition: .3s ease; }
       .sidebar .navbar .navbar-wrapper .navbar-item .navbar-link:hover, .sidebar .navbar .navbar-wrapper .navbar-item .navbar-link.active {
         background: #F4F3F40D; }
+        .sidebar .navbar .navbar-wrapper .navbar-item .navbar-link:hover .icon, .sidebar .navbar .navbar-wrapper .navbar-item .navbar-link.active .icon {
+          background: transparent; }
+    .sidebar .navbar .navbar-wrapper .navbar-dropdown .navbar-item .navbar-link .icon {
+      background: transparent; }
     @media only screen and (max-width: 1200px) {
       .sidebar .navbar {
         position: fixed;
