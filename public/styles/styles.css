@@ -170,6 +170,9 @@ body {
     display: block;
     width: 100%;
     margin-bottom: 100px; }
+    .sidebar .navbar .navbar-wrapper .navbar-item.dropdown > .navbar-link[aria-expanded="true"] i {
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg); }
     .sidebar .navbar .navbar-wrapper .navbar-item .navbar-link {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -186,9 +189,6 @@ body {
       cursor: pointer;
       text-decoration: none;
       margin-top: 8px; }
-      .sidebar .navbar .navbar-wrapper .navbar-item .navbar-link[aria-expanded="true"] i {
-        -webkit-transform: rotate(180deg);
-        transform: rotate(180deg); }
       .sidebar .navbar .navbar-wrapper .navbar-item .navbar-link .icon {
         background: #F4F3F40D;
         border-radius: 4px;
@@ -271,10 +271,14 @@ body {
           content: "";
           position: absolute;
           width: 2px;
-          height: 8px;
+          height: 10px;
           background: #4E4950;
-          bottom: -10px;
-          left: 50%; }
+          top: 110%;
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+          transform: translateX(-50%); }
+        .step-bar .step-bar-list .item:not(:last-child).tall .icon::after {
+          height: 28px; }
       .step-bar .step-bar-list .item .icon {
         position: relative; }
         .step-bar .step-bar-list .item .icon img {
@@ -412,3 +416,23 @@ body {
   font-size: 12px;
   font-weight: 400;
   margin-right: 10px; }
+
+.nav-tab-section .nav-tabs {
+  border: none;
+  background: #171618;
+  border-radius: 5px; }
+  .nav-tab-section .nav-tabs .nav-item {
+    width: 50%; }
+    .nav-tab-section .nav-tabs .nav-item .nav-link {
+      height: 40px;
+      background: #171618;
+      color: #fff;
+      font-size: 12px;
+      line-height: 16px;
+      border: none;
+      border-radius: 4px; }
+      .nav-tab-section .nav-tabs .nav-item .nav-link.active {
+        background: var(--linear-primary); }
+
+.nav-tab-section .tab-content {
+  padding-block: 20px; }

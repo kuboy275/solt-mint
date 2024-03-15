@@ -29,7 +29,7 @@
                 <ul class="bread-crumbs-list d-flex align-items-center">
                   <li> <span>Home/</span></li>
                   <li> <span>Token Manager/</span></li>
-                  <li> <span class="active">Token Creator</span></li>
+                  <li> <span class="active">Token Burn</span></li>
                 </ul>
               </div>
             </div>
@@ -52,9 +52,9 @@
                     <li class="navbar-item dropdown"><a class="navbar-link" data-toggle="collapse" href="#collapseTokenManager" aria-expanded="false"><img class="icon" src="./images/icons/token-manager-icon.png">Token manager <i class="far fa-angle-down"></i></a>
                       <div class="collapse" id="collapseTokenManager">
                         <ul class="navbar-dropdown"> 
-                          <li class="navbar-item"> <a class="navbar-link active" href="token-creator.html"><img class="icon" src="./images/icons/home-icon.png">Token Creator <span class="noti">New</span></a></li>
+                          <li class="navbar-item"> <a class="navbar-link" href="token-creator.html"><img class="icon" src="./images/icons/home-icon.png">Token Creator <span class="noti">New</span></a></li>
                           <li class="navbar-item"> <a class="navbar-link" href="mint-revoke-authority.html"><img class="icon" src="./images/icons/home-icon.png">Mint, Revoke Authority <span class="noti">New</span></a></li>
-                          <li class="navbar-item"> <a class="navbar-link" href="./token-burn.html"><img class="icon" src="./images/icons/home-icon.png">Token Burn<span class="noti">New</span></a></li>
+                          <li class="navbar-item"> <a class="navbar-link active" href="./token-burn.html"><img class="icon" src="./images/icons/home-icon.png">Token Burn<span class="noti">New</span></a></li>
                           <li class="navbar-item"> <a class="navbar-link" href="./update-metadata.html"><img class="icon" src="./images/icons/home-icon.png">Update Metadata<span class="noti">New</span></a></li>
                         </ul>
                       </div>
@@ -66,126 +66,78 @@
             </div>
             <div class="col-12 col-xl-7">
               <div class="content-wrapper"> 
-                <div class="content-submit"> 
-                  <h6 class="content-submit-title">SPL-Token Creator</h6>
-                  <p class="content-submit-desc">Easily Create your own Solana SPL Token in just 7+1 steps without Coding.</p>
-                </div>
                 <div class="row flex-column flex-column-reverse flex-xl-row">
                   <div class="col-12 col-xl-6">
+                    <div class="content-submit"> 
+                      <h6 class="content-submit-title">Burn SPL-Token</h6>
+                      <p class="content-submit-desc">Easy to burn SPL-Token with 1 click !</p>
+                    </div>
                     <form class="form-submit" action="">
                       <div class="form-group"> 
-                        <label for="">Token Name (ex. SolMint)</label>
+                        <label for="">Token Address</label>
                         <input class="form-control" type="text" placeholder="Enter token name">
-                      </div>
-                      <div class="form-row"> 
-                        <div class="col-12 col-xl-6">
-                          <div class="form-group"> 
-                            <label for=""> Decimals (1-9)</label>
-                            <input class="form-control" type="text" placeholder="9" name="">
-                          </div>
-                        </div>
-                        <div class="col-12 col-xl-6">
-                          <div class="form-group"> 
-                            <label for="">Symbol (Max 8, ex. SM)</label>
-                            <input class="form-control" type="text" placeholder="Enter token symbol" name="">
-                          </div>
-                        </div>
                       </div>
                       <div class="form-group"> 
                         <label for="">Amount</label>
                         <input class="form-control" type="text" placeholder="1.000.000.000">
                       </div>
-                      <div class="form-group"> 
-                        <label for="">Description </label>
-                        <textarea class="form-control" name="" rows="4" placeholder="Enter project description"></textarea>
-                      </div>
-                      <div class="form-group form-upload-file">
-                        <label for="">Logo </label>
-                        <label class="label-upload-logo" for="fileUploadLogo"><img src="./images/icons/default-upload.png" alt="">
-                          <div class="desc"> 
-                            <p class="name-img"></p>
-                            <p> <span class="text-white">Click to upload </span>or drag and drop</p>
-                            <p>SVG, PNG, JPG or GIF (max. 400x400px)</p>
-                          </div>
-                          <input class="form-control-file js-upload-logo" type="file" id="fileUploadLogo" name="fileUploadLogo" accept="image/*">
-                        </label>
-                      </div>
-                      <div class="form-row"> 
-                        <div class="col-12 col-xl-6">
-                          <div class="form-group"> 
-                            <label for="">Website</label>
-                            <input class="form-control" type="text" placeholder="Website URL" name="">
-                          </div>
-                        </div>
-                        <div class="col-12 col-xl-6">
-                          <div class="form-group"> 
-                            <label for="">Twitter</label>
-                            <input class="form-control" type="text" placeholder="Twitter URL" name="">
-                          </div>
-                        </div>
-                        <div class="col-12 col-xl-6">
-                          <div class="form-group"> 
-                            <label for="">Telegram</label>
-                            <input class="form-control" type="text" placeholder="Telegram URL" name="">
-                          </div>
-                        </div>
-                        <div class="col-12 col-xl-6">
-                          <div class="form-group"> 
-                            <label for="">Other</label>
-                            <input class="form-control" type="text" placeholder="Optional URL" name="">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="form-row py-4">
-                        <div class="col-4">
-                          <div class="form-group form-check"><span class="label">Immutable</span>
-                            <input type="checkbox" id="Immutable" checked>
-                            <label for="Immutable"> </label><span class="status">FREE</span>
-                          </div>
-                        </div>
-                        <div class="col-4">
-                          <div class="form-group form-check"><span class="label">Revoke Freeze</span>
-                            <input type="checkbox" id="revoke-freeze" checked>
-                            <label for="revoke-freeze"> </label><span class="status">FREE</span>
-                          </div>
-                        </div>
-                        <div class="col-4">
-                          <div class="form-group form-check"><span class="label">Revoke Mint</span>
-                            <input type="checkbox" id="revoke-mint" checked>
-                            <label for="revoke-mint"> </label><span class="status">FREE</span>
-                          </div>
-                        </div>
-                      </div>
-                      <button class="btn btn-primary w-100" type="submit">Connect Wallet</button>
+                      <button class="btn btn-primary w-100 mt-5" type="submit">Connect Wallet</button>
                     </form>
                   </div>
                   <div class="col-12 col-xl-6"> 
-                    <div class="step-bar"> 
-                      <h6 class="step-bar-title">How to use SPL-Token Creator</h6>
-                      <div class="step-bar-list"> 
-                        <div class="item"> <span class="icon"> <img src="./images/icons/check-icon.png" alt=""></span>
-                          <p>Connect your Solana wallet</p>
+                    <div class="nav-tab-section"> 
+                      <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="w-100 nav-link active" data-toggle="tab" data-target="#spl-token" type="button" role="tab" aria-selected="true">Burn SPL-Token</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="w-100 nav-link" data-toggle="tab" data-target="#lp-token" type="button" role="tab" aria-selected="false">Burn LP-Token</button>
+                        </li>
+                      </ul>
+                      <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="spl-token">
+                          <div class="step-bar"> 
+                            <h6 class="step-bar-title">How to use SPL-Token Creator</h6>
+                            <div class="step-bar-list"> 
+                              <div class="item"> <span class="icon"> <img src="./images/icons/check-icon.png" alt=""></span>
+                                <p>Connect your Solana wallet</p>
+                              </div>
+                              <div class="item"> <span class="icon"> <img src="./images/icons/check-icon.png" alt=""></span>
+                                <p>Select the Token from your wallet</p>
+                              </div>
+                              <div class="item"> <span class="icon"> <img src="./images/icons/check-icon.png" alt=""></span>
+                                <p>Enter the amount of SPL tokens you want to burn</p>
+                              </div>
+                              <div class="item"> <span class="icon"> <img src="./images/icons/check-icon.png" alt=""></span>
+                                <p>Accept the Transaction</p>
+                              </div>
+                              <div class="item"> <span class="icon"> <img src="./images/icons/check-icon.png" alt=""></span>
+                                <p>Wait a second</p>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                        <div class="item"> <span class="icon"> <img src="./images/icons/check-icon.png" alt=""></span>
-                          <p>Write the name you want for your Token</p>
-                        </div>
-                        <div class="item"> <span class="icon"> <img src="./images/icons/check-icon.png" alt=""></span>
-                          <p>Indicate the symbol (max 8 characters)</p>
-                        </div>
-                        <div class="item"> <span class="icon"> <img src="./images/icons/check-icon.png" alt=""></span>
-                          <p>Select the decimals quantity</p>
-                        </div>
-                        <div class="item"> <span class="icon"> <img src="./images/icons/check-icon.png" alt=""></span>
-                          <p>Write the description you want for your SPL Token</p>
-                        </div>
-                        <div class="item"> <span class="icon"> <img src="./images/icons/check-icon.png" alt=""></span>
-                          <p>Upload the image for your token (PNG)</p>
-                        </div>
-                        <div class="item"> <span class="icon"> <img src="./images/icons/check-icon.png" alt=""></span>
-                          <p>Put the Supply of your Token</p>
-                        </div>
-                        <div class="item"> <span class="icon"> <img src="./images/icons/check-icon.png" alt=""></span>
-                          <p>Click on create, accept the transaction and wait until your token is ready</p>
+                        <div class="tab-pane fade" id="lp-token">
+                          <div class="step-bar"> 
+                            <h6 class="step-bar-title">How to use Burn LP-Token</h6>
+                            <div class="step-bar-list"> 
+                              <div class="item"> <span class="icon"> <img src="./images/icons/check-icon.png" alt=""></span>
+                                <p>Connect your Solana wallet</p>
+                              </div>
+                              <div class="item"> <span class="icon"> <img src="./images/icons/check-icon.png" alt=""></span>
+                                <p>Select the Token from your wallet </p>
+                              </div>
+                              <div class="item"> <span class="icon"> <img src="./images/icons/check-icon.png" alt=""></span>
+                                <p>Enter the amount of LP token you want to burn</p>
+                              </div>
+                              <div class="item"> <span class="icon"> <img src="./images/icons/check-icon.png" alt=""></span>
+                                <p>Accept the Transaction</p>
+                              </div>
+                              <div class="item"> <span class="icon"> <img src="./images/icons/check-icon.png" alt=""></span>
+                                <p>Wait a second</p>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
