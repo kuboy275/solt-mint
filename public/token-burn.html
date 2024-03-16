@@ -10,6 +10,7 @@
     <link rel="icon" href="favicon-16x16.png" type="image/x-icon" sizes="16x16">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" href="styles/styles.css">
@@ -48,17 +49,77 @@
               <div class="sidebar">
                 <div class="navbar">
                   <ul class="navbar-wrapper"> 
-                    <li class="navbar-item"> <a class="navbar-link"><img class="icon" src="./images/icons/home-icon.png">Home </a></li>
-                    <li class="navbar-item dropdown"><a class="navbar-link" data-toggle="collapse" href="#collapseTokenManager" aria-expanded="false"><img class="icon" src="./images/icons/token-manager-icon.png">Token manager <i class="far fa-angle-down"></i></a>
+                    <li class="navbar-item"> <a class="navbar-link"><span class="icon"> <i class="ti ti-home-2"></i></span>Home </a></li>
+                    <li class="navbar-item dropdown"><a class="navbar-link" data-toggle="collapse" href="#collapseTokenManager" aria-expanded="false"><span class="icon"> <i class="ti ti-coins"></i></span>Token manager <i class="far fa-angle-down"></i></a>
                       <div class="collapse" id="collapseTokenManager">
                         <ul class="navbar-dropdown"> 
-                          <li class="navbar-item"> <a class="navbar-link" href="token-creator.html"><img class="icon" src="./images/icons/home-icon.png">Token Creator <span class="noti">New</span></a></li>
-                          <li class="navbar-item"> <a class="navbar-link" href="mint-revoke-authority.html"><img class="icon" src="./images/icons/home-icon.png">Mint, Revoke Authority <span class="noti">New</span></a></li>
-                          <li class="navbar-item"> <a class="navbar-link active" href="./token-burn.html"><img class="icon" src="./images/icons/home-icon.png">Token Burn<span class="noti">New</span></a></li>
-                          <li class="navbar-item"> <a class="navbar-link" href="./update-metadata.html"><img class="icon" src="./images/icons/home-icon.png">Update Metadata<span class="noti">New</span></a></li>
+                          <li class="navbar-item"> <a class="navbar-link" href="token-creator.html"><span class="icon"> <i class="ti ti-vector"></i></span>Token Creator </a></li>
+                          <li class="navbar-item"> <a class="navbar-link" href="mint-revoke-authority.html"><span class="icon"> <i class="ti ti-businessplan"></i></span>Mint, Revoke Authority </a></li>
+                          <li class="navbar-item"> <a class="navbar-link active" href="./token-burn.html"><span class="icon"> <i class="ti ti-flame"></i></span>Token Burn</a></li>
+                          <li class="navbar-item"> <a class="navbar-link" href="./update-metadata.html"><span class="icon"> <i class="ti ti-edit-circle"></i></span>Update Metadata</a></li>
+                          <li class="navbar-item"> <a class="navbar-link" href="#!"><span class="icon"> <i class="ti ti-users-group"></i></span>Update Metadata</a></li>
                         </ul>
                       </div>
                     </li>
+                    <li class="navbar-item"> <a class="navbar-link"><span class="icon"> <i class="ti ti-building-store"></i></span>Openbook Market </a></li>
+                    <li class="navbar-item dropdown"><a class="navbar-link" data-toggle="collapse" href="#collapseLpManagement" aria-expanded="false"><span class="icon"> <i class="ti ti-droplet"></i></span>LP Management<i class="far fa-angle-down"></i></a>
+                      <div class="collapse" id="collapseLpManagement">
+                        <ul class="navbar-dropdown"> 
+                          <li class="navbar-item"> <a class="navbar-link" data-toggle="collapse" href="#collapseCreateLiquidityPool" aria-expanded="false"><span class="icon"> <i class="ti ti-bucket-droplet"></i></span>Create Liquidity Pool <i class="far fa-angle-down"></i></a>
+                            <div class="collapse" id="collapseCreateLiquidityPool">
+                              <ul class="navbar-dropdown"> 
+                                <li class="navbar-item"> <a class="navbar-link" href="#!"><span class="icon"> <i class="ti ti-currency-solana"></i></span>Raydium AMMs</a></li>
+                                <li class="navbar-item"> <a class="navbar-link" href="#!"><span class="icon"> <i class="ti ti-currency-solana"></i></span>Jupiter AMMs</a></li>
+                                <li class="navbar-item"> <a class="navbar-link" href="#!"><span class="icon"> <i class="ti ti-currency-solana"></i></span>Orca AMMs</a></li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="navbar-item"> <a class="navbar-link" href="#!"><span class="icon"> <i class="ti ti-droplet-up"></i></span>Add More Liquidity Pool</a></li>
+                          <li class="navbar-item"> <a class="navbar-link" data-toggle="collapse" href="#collapseRemoveLiquidityPool" aria-expanded="false"><span class="icon"> <i class="ti ti-droplet-x"></i></span>Remove Liquidity Pool<i class="far fa-angle-down"></i></a>
+                            <div class="collapse" id="collapseRemoveLiquidityPool">
+                              <ul class="navbar-dropdown"> 
+                                <li class="navbar-item"> <a class="navbar-link" href="#!"><span class="icon"> <i class="ti ti-trash"></i></span>Normal Remove</a></li>
+                                <li class="navbar-item"> <a class="navbar-link" href="#!"><span class="icon"> <i class="ti ti-trash-x"></i></span>Instant Remove</a></li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="navbar-item"> <a class="navbar-link" href="#!"><span class="icon"> <i class="ti ti-campfire"></i></span>Burn Liquidity</a></li>
+                          <li class="navbar-item"> <a class="navbar-link" href="#!"><span class="icon"> <i class="ti ti-lock"></i></span>Lock Liquidity</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="navbar-item"> <a class="navbar-link"><span class="icon"> <i class="ti ti-robot"></i></span>SolMintBot</a></li>
+                    <li class="navbar-item dropdown"><a class="navbar-link" data-toggle="collapse" href="#collapseCreateLock" aria-expanded="false"><span class="icon"> <i class="ti ti-lock-access"></i></span>Create Lock<i class="far fa-angle-down"></i></a>
+                      <div class="collapse" id="collapseCreateLock">
+                        <ul class="navbar-dropdown"> 
+                          <li class="navbar-item"> <a class="navbar-link" href="#!"><span class="icon"> <i class="ti ti-circle-key"></i></span>Token lock</a></li>
+                          <li class="navbar-item"> <a class="navbar-link" href="#!"><span class="icon"> <i class="ti ti-cloud-lock"></i></span>Liquidity lock</a></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="navbar-item dropdown"><a class="navbar-link" data-toggle="collapse" href="#collapseNFT" aria-expanded="false"><span class="icon"> <i class="ti ti-photo-heart"></i></span>NFT<i class="far fa-angle-down"></i></a>
+                      <div class="collapse" id="collapseNFT">
+                        <ul class="navbar-dropdown"> 
+                          <li class="navbar-item"> <a class="navbar-link" href="#!"><span class="icon"> <i class="ti ti-brush"></i></span>Generate NFT</a></li>
+                          <li class="navbar-item"> <a class="navbar-link" href="#!"><span class="icon"> <i class="ti ti-pointer"></i></span>Creat Mint</a></li>
+                          <li class="navbar-item"> <a class="navbar-link" href="#!"><span class="icon"> <i class="ti ti-speakerphone"></i></span>Creat NFT presale</a></li>
+                          <li class="navbar-item"> <a class="navbar-link" href="#!"><span class="icon"> <i class="ti ti-stairs"></i></span>Creat NFT staking</a></li>
+                          <li class="navbar-item"> <a class="navbar-link" data-toggle="collapse" href="#collapseNFTManager" aria-expanded="false"><span class="icon"> <i class="ti ti-circles"></i></span>NFT manager<i class="far fa-angle-down"></i></a>
+                            <div class="collapse" id="collapseNFTManager">
+                              <ul class="navbar-dropdown"> 
+                                <li class="navbar-item"> <a class="navbar-link" href="#!"><span class="icon"> <i class="ti ti-moneybag"></i></span>Snapshot NFT holder</a></li>
+                                <li class="navbar-item"> <a class="navbar-link" href="#!"><span class="icon"> <i class="ti ti-tournament"></i></span>NFT multisender</a></li>
+                                <li class="navbar-item"> <a class="navbar-link" href="#!"><span class="icon"> <i class="ti ti-brand-databricks"></i></span>Update NFT metadata</a></li>
+                                <li class="navbar-item"> <a class="navbar-link" href="#!"><span class="icon"> <i class="ti ti-matchstick"></i></span>NFT Incinerator</a></li>
+                              </ul>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="navbar-item"> <a class="navbar-link disabled" disabled><span class="icon"> <i class="ti ti-rocket"></i></span>Launchpad</a></li>
+                    <li class="navbar-item"> <a class="navbar-link disabled" disabled><span class="icon"> <i class="ti ti-chart-dots"></i></span>Trading Bot</a></li>
+                    <li class="navbar-item"> <a class="navbar-link disabled" disabled><span class="icon"> <i class="ti ti-hand-click"></i></span>SolClaim</a></li>
                   </ul>
                 </div>
                 <div class="banner-ads d-none d-xl-block"><img src="./images/banner-ads-1.png" width="100%" alt="ads"></div>
@@ -156,7 +217,7 @@
           <div class="row align-items-center justify-content-between"> 
             <div class="col-12 col-xl-3">
               <div class="logo mb-4"><img src="./images/logo-footer.png" alt="Footer Logo"></div>
-              <p class="copy-right text-white">© 2024 SOLMINT. All rights reserved.</p>
+              <p class="copy-right text-white">© 2024 SOLMINT v1.1. All rights reserved.</p>
             </div>
             <div class="col-12 col-xl-4 pt-5 pt-xl-0">
               <div class="socials text-xl-right">
@@ -195,6 +256,7 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"> </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/@tabler/icons@1.74.0/icons-react/dist/index.umd.min.js"> </script>
     <script src="scripts/main.js"></script>
   </body>
 </html>
