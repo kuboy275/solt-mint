@@ -3,7 +3,9 @@
   --white-smoke: #F4F3F4;
   --white-flight:#F2F2F2;
   --light-grey: #827986;
-  --linear-primary: linear-gradient(73.59deg, #C923F3 36.15%, #00FFAA 114.66%),
+  --linear-primary: linear-gradient(to right, #C923F3 36.15%, #00FFAA 114.66%),
+    radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.12) 0%, rgba(0, 0, 0, 0) 100%);
+  --linear-primary-hover: linear-gradient(to left, #C923F3 36.15%, #00FFAA 114.66%),
     radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.12) 0%, rgba(0, 0, 0, 0) 100%);
   --green-color: #00FFAA;
   --footer-bg: #0D0D0F; }
@@ -149,10 +151,14 @@ body {
   border: none;
   outline: none;
   background: var(--linear-primary);
+  -webkit-transition: all .5 linear;
+  transition: all .5 linear;
   font-weight: 600;
   line-height: 24px;
   font-size: 16px;
   padding: 10px 24px; }
+  .btn-primary:hover {
+    background: var(--linear-primary-hover); }
   .btn-primary:focus {
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
