@@ -75,6 +75,12 @@ html {
 body {
   font-family: "Lexend", sans-serif; }
 
+.gap-5 {
+  gap: 5px; }
+
+.gap-10 {
+  gap: 10px; }
+
 .container {
   max-width: 98%; }
 
@@ -286,8 +292,14 @@ body {
           overflow-y: auto; } }
 
 .page-wrapper {
-  background-image: url("../images/main-bg.png");
+  background-image: url("../images/main-bg-2.png");
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+body.home-page .page-wrapper {
+  background-image: url("../images/home-page-bg.png");
+  background-position: top left;
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -508,6 +520,77 @@ body {
   @media only screen and (max-width: 991px) {
     .home-wrapper .home-controls .btn {
       width: 100%; } }
+
+.home-wrapper .home-banner-wrapper {
+  background: url("../images/home-banner.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 40px 100px 50px 0;
+  height: 300px;
+  position: relative; }
+  @media only screen and (max-width: 1200px) {
+    .home-wrapper .home-banner-wrapper {
+      background: url("../images/home-banner-mobile.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      padding: 50px 20px 20px; } }
+  .home-wrapper .home-banner-wrapper .content {
+    position: relative;
+    margin-left: auto;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content; }
+    @media only screen and (max-width: 1200px) {
+      .home-wrapper .home-banner-wrapper .content {
+        margin-inline: auto; } }
+    .home-wrapper .home-banner-wrapper .content h2 {
+      color: #33FFBB;
+      font-size: 44px;
+      line-height: 52px;
+      font-weight: 600; }
+      @media only screen and (max-width: 1200px) {
+        .home-wrapper .home-banner-wrapper .content h2 {
+          font-size: 30px;
+          line-height: 40px; } }
+    .home-wrapper .home-banner-wrapper .content .tag-h2 {
+      background: #fff;
+      border-radius: 3px;
+      padding: 5px; }
+      .home-wrapper .home-banner-wrapper .content .tag-h2 span {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: initial;
+        background: -webkit-linear-gradient(53.76deg, #3B00B9 17.92%, #01A66F 106.85%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; }
+    .home-wrapper .home-banner-wrapper .content h1 {
+      font-size: 52px;
+      line-height: 52px;
+      font-weight: 600;
+      color: #fff; }
+      @media only screen and (max-width: 1200px) {
+        .home-wrapper .home-banner-wrapper .content h1 {
+          font-size: 30px;
+          line-height: 40px; } }
+    .home-wrapper .home-banner-wrapper .content h3 {
+      font-size: 23px;
+      line-height: 52px;
+      font-weight: 600;
+      color: var(--white-smoke); }
+      @media only screen and (max-width: 1200px) {
+        .home-wrapper .home-banner-wrapper .content h3 {
+          line-height: 40px; } }
+      .home-wrapper .home-banner-wrapper .content h3 .gradient {
+        background: -webkit-linear-gradient(260.52deg, #00BF7E -14.51%, #C777FD 72.99%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; }
+    .home-wrapper .home-banner-wrapper .content .btn {
+      margin-top: 10px;
+      width: -webkit-max-content;
+      width: -moz-max-content;
+      width: max-content; }
 
 .home-wrapper .home-features-title {
   margin-bottom: 30px; }
