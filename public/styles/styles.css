@@ -3,9 +3,9 @@
   --white-smoke: #F4F3F4;
   --white-flight:#F2F2F2;
   --light-grey: #827986;
-  --linear-primary: linear-gradient(to right, #C923F3 36.15%, #00FFAA 114.66%),
+  --linear-primary: linear-gradient(73.59deg, #C923F3 36.15%, #00FFAA 114.66%),
     radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.12) 0%, rgba(0, 0, 0, 0) 100%);
-  --linear-primary-hover: linear-gradient(to left, #C923F3 36.15%, #00FFAA 114.66%),
+  --linear-primary-hover: linear-gradient(-73.59deg, #C923F3 36.15%, #00FFAA 114.66%),
     radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.12) 0%, rgba(0, 0, 0, 0) 100%);
   --green-color: #00FFAA;
   --footer-bg: #0D0D0F; }
@@ -377,6 +377,10 @@ body.home-page .page-wrapper {
     color: var(--white-smoke);
     line-height: 20px;
     margin-bottom: 5px; }
+  .form-submit .form-group .input-note {
+    color: #9B949E;
+    font-size: 12px;
+    padding-top: 10px; }
   .form-submit .form-group .js-remove-receiver-input {
     position: absolute;
     top: 50%;
@@ -496,6 +500,93 @@ body.home-page .page-wrapper {
   font-size: 12px;
   font-weight: 400;
   margin-right: 10px; }
+
+.form-submit .number-input {
+  position: relative; }
+  .form-submit .number-input input[type="number"]::-webkit-inner-spin-button, .form-submit .number-input input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none; }
+  .form-submit .number-input .arrow {
+    position: absolute;
+    background: #1F1D20;
+    color: #827986;
+    border-radius: 2px;
+    padding: 2px 5px;
+    font-size: 12px;
+    right: 10px;
+    z-index: 1;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    text-decoration: none !important;
+    border: none !important; }
+    .form-submit .number-input .arrow-minus {
+      top: 6px; }
+      .form-submit .number-input .arrow-minus i:before {
+        content: '\f7d9'; }
+    .form-submit .number-input .arrow-plus {
+      bottom: 6px; }
+      .form-submit .number-input .arrow-plus i:before {
+        content: '\f7d6'; }
+
+.form-submit .description-form {
+  margin-bottom: 15px; }
+  .form-submit .description-form h3 {
+    color: #fff;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600; }
+  .form-submit .description-form p {
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--white-smoke); }
+  .form-submit .description-form .total-rent-estimate {
+    border: 2px solid #E6E4E71A;
+    background: #F4F3F40D;
+    padding: 16px;
+    border-radius: 4px;
+    margin-top: 15px; }
+    .form-submit .description-form .total-rent-estimate .result span {
+      font-size: 24px;
+      font-weight: 600;
+      background: -webkit-linear-gradient(48.2deg, #AA00FF 3.33%, #00FFAA 152.07%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+
+.form-submit .description-form-small {
+  margin-bottom: 15px; }
+  .form-submit .description-form-small h6 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--white-smoke); }
+  .form-submit .description-form-small p {
+    font-size: 12px;
+    line-height: 16px;
+    color: #827986; }
+
+.form-submit .alert-form .alert {
+  border-radius: 4px;
+  padding: 14px 12px; }
+  .form-submit .alert-form .alert .content .icon {
+    font-size: 20px; }
+  .form-submit .alert-form .alert .content p {
+    font-size: 14px; }
+  .form-submit .alert-form .alert .close {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: 24px;
+    opacity: 1;
+    text-shadow: none; }
+    .form-submit .alert-form .alert .close:hover {
+      color: inherit; }
+  .form-submit .alert-form .alert-warning {
+    background-color: #FFAA001A;
+    border-color: #FFAA00; }
+    .form-submit .alert-form .alert-warning .content {
+      color: #FFAA00; }
+    .form-submit .alert-form .alert-warning .close {
+      color: #FFAA00; }
 
 .nav-tab-section .nav-tabs {
   border: none;
