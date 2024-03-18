@@ -77,6 +77,21 @@ html {
 body {
   font-family: "Lexend", sans-serif; }
 
+@-webkit-keyframes spinner-rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes spinner-rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+.text-gradient-primary {
+  background: -webkit-linear-gradient(48.2deg, #AA00FF 3.33%, #00FFAA 152.07%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
 .gap-5 {
   gap: 5px; }
 
@@ -157,6 +172,8 @@ body {
   line-height: 24px;
   font-size: 16px;
   padding: 10px 24px; }
+  .btn-primary-small {
+    padding: 5px 10px; }
   .btn-primary:hover {
     background: var(--linear-primary-hover); }
   .btn-primary:focus {
@@ -545,12 +562,12 @@ body.home-page .page-wrapper {
     padding: 16px;
     border-radius: 4px;
     margin-top: 15px; }
+    .form-submit .description-form .total-rent-estimate .result .btn:hover i.ti-refresh {
+      -webkit-animation: 1.2s linear infinite spinner-rotate;
+      animation: 1.2s linear infinite spinner-rotate; }
     .form-submit .description-form .total-rent-estimate .result span {
       font-size: 24px;
-      font-weight: 600;
-      background: -webkit-linear-gradient(48.2deg, #AA00FF 3.33%, #00FFAA 152.07%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent; }
+      font-weight: 600; }
 
 .form-submit .description-form-small {
   margin-bottom: 15px; }
