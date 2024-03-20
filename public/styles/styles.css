@@ -307,8 +307,12 @@ body {
         -webkit-transition: .3s ease;
         transition: .3s ease;
         padding-bottom: 60px;
-        height: 100vh; }
+        height: 100vh;
+        opacity: 0;
+        visibility: hidden; }
         .sidebar-left .navbar-menu-left.active {
+          opacity: 1;
+          visibility: visible;
           z-index: 5; }
         .sidebar-left .navbar-menu-left .navbar-wrapper {
           height: 90vh;
