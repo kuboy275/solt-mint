@@ -276,6 +276,8 @@ body {
         color: #FFAA00;
         font-size: 10px;
         font-weight: 600; }
+    .sidebar-left .navbar-menu-left .navbar-wrapper .navbar-item .collapse {
+      visibility: visible !important; }
     .sidebar-left .navbar-menu-left .navbar-wrapper .navbar-dropdown .navbar-item .navbar-link {
       color: #827986;
       margin-top: 5px; }
