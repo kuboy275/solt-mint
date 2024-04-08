@@ -30,7 +30,7 @@
                 <ul class="bread-crumbs-list d-flex align-items-center">
                   <li> <span>Home/</span></li>
                   <li> <span>Token Manager/</span></li>
-                  <li> <span class="active">LP Lock</span></li>
+                  <li> <span class="active">Multisender</span></li>
                 </ul>
               </div>
             </div>
@@ -57,7 +57,7 @@
                           <li class="navbar-item"> <a class="navbar-link" href="mint-revoke-authority.html"><span class="icon"> <i class="ti ti-businessplan"></i></span>Mint, Revoke Authority </a></li>
                           <li class="navbar-item"> <a class="navbar-link" href="./token-burn.html"><span class="icon"> <i class="ti ti-flame"></i></span>Token Burn</a></li>
                           <li class="navbar-item"> <a class="navbar-link" href="./update-metadata.html"><span class="icon"> <i class="ti ti-edit-circle"></i></span>Update Metadata</a></li>
-                          <li class="navbar-item"> <a class="navbar-link" href="multi-sender.html"><span class="icon"> <i class="ti ti-users-group"></i></span>Multisender</a></li>
+                          <li class="navbar-item"> <a class="navbar-link active" href="multi-sender.html"><span class="icon"> <i class="ti ti-users-group"></i></span>Multisender</a></li>
                         </ul>
                       </div>
                     </li>
@@ -92,7 +92,7 @@
                     <li class="navbar-item dropdown"><a class="navbar-link" data-toggle="collapse" href="#collapseCreateLock" aria-expanded="false"><span class="icon"> <i class="ti ti-lock-access"></i></span>Lock Management<i class="far fa-angle-down"></i></a>
                       <div class="collapse" id="collapseCreateLock">
                         <ul class="navbar-dropdown"> 
-                          <li class="navbar-item"> <a class="navbar-link active" href="lock-lp-token.html"><span class="icon"> <i class="ti ti-circle-key"></i></span>Lock Token</a></li>
+                          <li class="navbar-item"> <a class="navbar-link" href="lock-lp-token.html"><span class="icon"> <i class="ti ti-circle-key"></i></span>Lock Token</a></li>
                           <li class="navbar-item"> <a class="navbar-link" href="unlock.html"><span class="icon"> <i class="ti ti-cloud-lock"></i></span>Unlock Token</a></li>
                           <li class="navbar-item"> <a class="navbar-link" href="info-lock.html"><span class="icon"> <i class="ti ti-cloud-lock"></i></span>Lock Info</a></li>
                         </ul>
@@ -129,76 +129,64 @@
             <div class="col-12 col-xl-7">
               <div class="content-wrapper"> 
                 <div class="content-submit"> 
-                  <h6 class="content-submit-title">Lock Token</h6>
-                  <h6 class="content-submit-title">(SPL Token and LP Token)</h6>
-                  <p class="content-submit-desc">Lock LP Token with 1 click !</p>
+                  <h6 class="content-submit-title">Solana Token Multisender</h6>
+                  <p class="content-submit-desc">Easily send any Solana Token to thousands wallets with 1 click</p>
                 </div>
                 <div class="row flex-column flex-column-reverse flex-xl-row">
-                  <div class="col-12 col-xl-6">
+                  <div class="col-12 col-xl-12">
                     <form class="form-submit" action="">
-                      <div class="form-group"> 
-                        <label for="">Token Address (SPL Token and LP Token)</label>
-                        <input class="form-control" type="text" placeholder="Enter Your Token Address">
+                      <div class="form-group">
+                        <label for="">Token Address</label>
+                        <input class="form-control" type="text" placeholder="Your Token Address">
                       </div>
-                      <div class="form-group my-5">
-                        <div class="form-box"> 
-                          <div class="box-from d-flex align-items-center justify-content-between"> 
-                            <h3>Amount to lock</h3>
-                          </div>
-                          <div class="box-amount d-flex align-items-center justify-content-between my-4"><span class="label">Amount </span>
-                            <input class="form-control" type="text" autofocus value="2.1223">
-                          </div>
-                          <div class="box-balane d-flex align-items-center justify-content-between"><span class="label">Balance </span>
-                            <div class="result d-flex align-items-center justify-content-between gap-10"> <span>18.7685 </span>
-                              <button class="btn btn-primary btn-primary-small" type="button">MAX</button>
-                            </div>
-                          </div>
+                      <div class="d-flex gap-10 my-5"> 
+                        <button class="btn btn-primary" type="button">UPLOAD CSV</button>
+                        <button class="btn btn-primary" type="button">DOWNLOAD CSV SAMPLE</button>
+                      </div>
+                      <div class="form-group">
+                        <label for="">LIST OF WALLET ADDRESSES</label>
+                        <ul class="list-of-wallet"> 
+                          <li>
+                            <p>49vwyQ9hT8p5kxZ7DutXWUjX4vHBALrS5wAxpr2ZfRYG</p>
+                          </li>
+                          <li>
+                            <p>4zdNGgAtFsW1cQgHqkiWyRsxaAgxrSRRynnuunxzjxue</p>
+                          </li>
+                          <li>
+                            <p>9grrSLfZ5S1cosQh9uGxAvrf6ZDPnJqA7R4CKMXfAB8A</p>
+                          </li>
+                          <li>
+                            <p>ri2fPBq3TVkY9neCeiJRuCs2YdviVfaHxrVZtqpFdLz</p>
+                          </li>
+                          <li>
+                            <p>2JkinR8V1RjX71tjWqd1eZR7dYBfb3MUSXzmLhYGcjE8</p>
+                          </li>
+                          <li>
+                            <p>2JkinR8V1RjX71tjWqd1eZR7dYBfb3MUSXzmLhYGcjE8</p>
+                          </li>
+                          <li>
+                            <p>2JkinR8V1RjX71tjWqd1eZR7dYBfb3MUSXzmLhYGcjE8</p>
+                          </li>
+                          <li>
+                            <p>2JkinR8V1RjX71tjWqd1eZR7dYBfb3MUSXzmLhYGcjE8</p>
+                          </li>
+                          <li>
+                            <p>2JkinR8V1RjX71tjWqd1eZR7dYBfb3MUSXzmLhYGcjE8</p>
+                          </li>
+                          <li>
+                            <p>2JkinR8V1RjX71tjWqd1eZR7dYBfb3MUSXzmLhYGcjE8</p>
+                          </li>
+                          <li>
+                            <p>2JkinR8V1RjX71tjWqd1eZR7dYBfb3MUSXzmLhYGcjE8</p>
+                          </li>
+                        </ul>
+                        <div class="result-wallet d-flex justify-content-between flex-wrap my-5 gap-10"> 
+                          <h4 class="h4 text-white">TOTAL WALLETS: <span class="value">111111111111</span></h4>
+                          <h4 class="h4 text-white">TOTAL TX FEES: <span class="value">(0.001 * TOTAL WALLETS)</span></h4>
                         </div>
                       </div>
-                      <div class="form-group my-5">
-                        <label for="">Lock time</label>
-                        <input class="form-control form-control-date" type="datetime-local" placeholder="MM:DD:YY HH:MM">
-                      </div>
-                      <button class="btn btn-primary w-100" type="submit">Lock Token (cost 1 SOL)</button>
+                      <button class="btn btn-primary w-100" type="submit">SUBMIT</button>
                     </form>
-                    <form class="form-submit"> 
-                      <div class="form-group key-address my-5"> 
-                        <label for="">SEED KEY</label>
-                        <div class="key-adress-input">
-                          <input class="form-control" type="text" placeholder="Enter your LP address">
-                          <button class="btn btn-secondary btn-secondary-small btn-copy" type="button"> <i class="ti ti-copy mr-3"></i>Copy</button>
-                        </div>
-                      </div>
-                      <div class="form-group key-address">
-                        <label for="">LOCK ADDRESS</label>
-                        <div class="key-adress-input">
-                          <input class="form-control" type="text" placeholder="Enter your LP address">
-                          <button class="btn btn-secondary btn-secondary-small btn-copy" type="button"> <i class="ti ti-copy mr-3"></i>Copy</button>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                  <div class="col-12 col-xl-6"> 
-                    <div class="step-bar"> 
-                      <h6 class="step-bar-title">How to Lock LP</h6>
-                      <div class="step-bar-list"> 
-                        <div class="item"> <span class="icon"> <img src="./images/icons/check-icon.png" alt=""></span>
-                          <p>Connect your Solana Wallet</p>
-                        </div>
-                        <div class="item"> <span class="icon"> <img src="./images/icons/check-icon.png" alt=""></span>
-                          <p>Enter the Liquidity Pool Address</p>
-                        </div>
-                        <div class="item"> <span class="icon"> <img src="./images/icons/check-icon.png" alt=""></span>
-                          <p>Select the amount of LP Token you want to lock</p>
-                        </div>
-                        <div class="item tall"><span class="icon"> <img src="./images/icons/check-icon.png" alt=""></span>
-                          <p>Select time to lock LP Token</p>
-                        </div>
-                        <div class="item"> <span class="icon"> <img src="./images/icons/check-icon.png" alt=""></span>
-                          <p>Accept the transaction and wait until the transaction is completed</p>
-                        </div>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
